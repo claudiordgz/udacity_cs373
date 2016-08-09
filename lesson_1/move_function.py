@@ -20,7 +20,7 @@ def sense(p, Z):
     return q
 
 def move(p, U):
-    U = U % len(p)
+    U %= len(p)
     q = p[-U:] + p[:-U]
     return q
 
