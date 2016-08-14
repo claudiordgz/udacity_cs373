@@ -41,6 +41,10 @@ def move_answer(p, U):
         s = s + pOvershoot * p[(i - U - 1) % len(p)]
         s = s + pUndershoot * p[(i - U + 1) % len(p)]
         q.append(s)
+    return q
 
 print move_answer(p, 1)
 print move(p, 1)
+
+for i in measurements:
+    p = sense(p, i)
